@@ -14,7 +14,7 @@ class ScrollViewController: UIViewController {
     private var contentView = UIView()
 
     
-    
+    //MARK: - 색상 뷰
     private let greenView: UIView = {
         let view = UIView()
         view.backgroundColor = .green
@@ -50,7 +50,8 @@ class ScrollViewController: UIViewController {
         view.backgroundColor = .yellow
         return view
     }()
-    
+   
+    //MARK: - layout
     private func setLayout() {
         self.view.addSubview(scrollView)
         scrollView.addSubview(contentView)
@@ -122,6 +123,7 @@ class ScrollViewController: UIViewController {
 
 }
 
+//MARK: - preview
 #Preview {
     ScrollViewController()
 }

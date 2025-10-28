@@ -1,25 +1,32 @@
 //
-//  WelcomeViewController.swift
+//  WelcomeViewController_Delegate.swift
 //  sopt-37th-01Seminar
 //
-//  Created by 임소은 on 10/11/25.
+//  Created by 임소은 on 10/18/25.
 //
+
 
 import Foundation
 import UIKit
 
-final class WelcomeViewController: UIViewController {
+protocol WelcomeReloginDelegate: AnyObject {
+    func retryLogin(didTapReloginWith message: String)
+}
+
+final class WelcomeViewController_Delegate: UIViewController {
     
     var name: String?
     
+    weak var delegate: WelcomeReloginDelegate?
+    
     private let logoImageView: UIImageView = {
-        let imageView = UIImageView(frame: CGRect(x: 112, y: 87, width: 150, height: 150))
+        let imageView = UIImageView()
         imageView.image = UIImage(named: "logo2")
         return imageView
     }()
     
     private let welcomeLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 140, y: 295, width: 95, height: 60))
+        let label = UILabel()
         label.text = "???님 \n반가워요!"
         label.font = UIFont(name: "Pretendard-ExtraBold", size: 25)
         label.textAlignment = .center
@@ -61,12 +68,16 @@ final class WelcomeViewController: UIViewController {
     
     private func setLayout() {
         [logoImageView, welcomeLabel, goHomeButton, backToLoginButton].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
             self.view.addSubview($0)
         }
     }
     
     @objc
     private func backToLoginButtonDidTap() {
+        
+        delegate?.retryLogin(didTapReloginWith: "다시 로그인 버튼을 눌렀어요!")
+        
         if self.navigationController == nil {
             self.dismiss(animated: true)
         } else {

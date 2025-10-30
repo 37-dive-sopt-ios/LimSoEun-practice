@@ -86,6 +86,7 @@ final class LoginViewController: UIViewController {
     
 }
 
+//MARK: - padding
 extension UITextField {
     func addLeftPadding(_ width: CGFloat = 10) {
         let pv = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 0))
@@ -97,6 +98,20 @@ extension UITextField {
         let pv = UIView(frame: CGRect(x: 0, y: 0, width: width, height: 0))
         rightView = pv
         rightViewMode = .always
+    }
+}
+
+
+//MARK: - 가운데 정렬
+extension LoginViewController {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        var f = titleLabel.frame
+        f.origin.x = (view.bounds.width - f.size.width) / 2
+        titleLabel.frame = f
+        idTextField.frame.origin.x       = (view.bounds.width - idTextField.frame.width) / 2
+        passwordTextField.frame.origin.x = (view.bounds.width - passwordTextField.frame.width) / 2
+        loginButton.frame.origin.x       = (view.bounds.width - loginButton.frame.width) / 2
     }
 }
 

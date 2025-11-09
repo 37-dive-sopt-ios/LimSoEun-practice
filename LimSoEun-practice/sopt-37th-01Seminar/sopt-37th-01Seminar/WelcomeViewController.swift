@@ -10,7 +10,7 @@ import UIKit
 
 final class WelcomeViewController: UIViewController {
     
-    var name: String?
+    var name: String? 
     
     private let logoImageView: UIImageView = {
         let imageView = UIImageView(frame: CGRect(x: 112, y: 87, width: 150, height: 150))

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5280C3832EA3826E009D42AC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5280C3822EA3826E009D42AC /* SnapKit */; };
+		52C8E62C2EBF258F004AD751 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52C8E62B2EBF258F004AD751 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5280C3832EA3826E009D42AC /* SnapKit in Frameworks */,
+				52C8E62C2EBF258F004AD751 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = "sopt-37th-01Seminar";
 			packageProductDependencies = (
-				5280C3822EA3826E009D42AC /* SnapKit */,
+				52C8E62B2EBF258F004AD751 /* SnapKit */,
 			);
 			productName = "sopt-37th-01Seminar";
 			productReference = 52B320532E9A22BC00C0308C /* sopt-37th-01Seminar.app */;
@@ -114,7 +114,7 @@
 			mainGroup = 52B3204A2E9A22BC00C0308C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				5280C3812EA3826E009D42AC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				52C8E62A2EBF258F004AD751 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 52B320542E9A22BC00C0308C /* Products */;
@@ -362,7 +362,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5280C3812EA3826E009D42AC /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		52C8E62A2EBF258F004AD751 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -373,9 +373,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5280C3822EA3826E009D42AC /* SnapKit */ = {
+		52C8E62B2EBF258F004AD751 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5280C3812EA3826E009D42AC /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 52C8E62A2EBF258F004AD751 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

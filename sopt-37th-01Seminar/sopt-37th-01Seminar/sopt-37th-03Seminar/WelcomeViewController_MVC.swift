@@ -1,14 +1,15 @@
 //
-//  WelcomeViewController.swift
+//  WelcomeViewController_MVC.swift
 //  sopt-37th-01Seminar
 //
-//  Created by 임소은 on 10/11/25.
+//  Created by 임소은 on 11/1/25.
 //
+
 
 import Foundation
 import UIKit
 
-final class WelcomeViewController: UIViewController {
+final class WelcomeViewController_MVC: UIViewController {
     
     var name: String?
     

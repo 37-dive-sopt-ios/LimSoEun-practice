@@ -5,13 +5,6 @@
 //  Created by 임소은 on 11/8/25.
 //
 
-//
-//  LoadingIndicatorable.swift
-//  Seminar04
-//
-//  Created by 이명진 on 10/31/25.
-//
-
 import UIKit
 
 /// Loading Indicator를 표시할 수 있는 기능을 정의하는 프로토콜

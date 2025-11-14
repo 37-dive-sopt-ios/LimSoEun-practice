@@ -4,7 +4,7 @@
 //
 //  Created by 임소은 on 11/8/25.
 //
-
+//4주차
 /// 유저 등록 API
 struct RegisterRequest: Encodable {
     let username: String

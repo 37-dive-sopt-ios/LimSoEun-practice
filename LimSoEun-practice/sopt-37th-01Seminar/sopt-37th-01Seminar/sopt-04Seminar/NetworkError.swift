@@ -4,7 +4,7 @@
 //
 //  Created by 임소은 on 11/8/25.
 //
-
+//4주차
 import Foundation
 
 /// 네트워크 에러 타입

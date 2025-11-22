@@ -4,7 +4,7 @@
 //
 //  Created by 이명진 on 10/30/25.
 //
-
+//4주차
 import Foundation
 
 /// 사용자 정보 응답 모델
